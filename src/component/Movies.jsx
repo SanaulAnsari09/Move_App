@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
-import AllListCard from "./AllListCard";
+import AllList from "./listComponent/AllList";
+import TvshowsList from "./listComponent/TvshowsList";
+import MovieList from "./listComponent/MovieList";
 import { Context } from "../pages/Home";
 
-// Inside this componet i made tab for all/movies and TV Shows 
+// Inside this componet i used tab for all/movies and TV Shows
 const Movies = () => {
-
   // got seaarchValue state setter function from context
-  const {setSearchValue} = useContext(Context);
+  const { setSearchValue } = useContext(Context);
 
-  // onclick search input will be empty 
+  // onclick search input will be empty
   const handleEmptySearchInput = () => {
     setSearchValue("");
   };
@@ -69,7 +70,7 @@ const Movies = () => {
           role="tabpanel"
           aria-labelledby="supplier-selection"
         >
-          <AllListCard keyword={"hollywood"} section={'Movies & Shows'}/>
+          <AllList keyword={"hollywood"} section={"Movies & Shows"} />
         </div>
         <div
           className="tab-pane fade show"
@@ -77,7 +78,7 @@ const Movies = () => {
           role="tabpanel"
           aria-labelledby="reservation-request"
         >
-          <AllListCard keyword={"movies"} section={'Movies'}/>
+          <MovieList keyword={"movies"} section={"Movies"} />
         </div>
         <div
           className="tab-pane fade show"
@@ -85,7 +86,7 @@ const Movies = () => {
           role="tabpanel"
           aria-labelledby="final-price"
         >
-          <AllListCard keyword={"show"} section={'TV Shows'}/>
+          <TvshowsList keyword={"show"} section={"TV Shows"} />
         </div>
       </div>
     </div>

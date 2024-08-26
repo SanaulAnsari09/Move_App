@@ -1,7 +1,6 @@
 import React from "react";
 
 const HeroSection = ({ setSearchValue, searchValue }) => {
-
   // stored search input value inside global state 'searchValue' is a global state and it's created inside Home.jsx
   const handleChange = (e) => {
     setSearchValue(e?.target?.value);
@@ -14,10 +13,8 @@ const HeroSection = ({ setSearchValue, searchValue }) => {
           <div>
             <h1 className="text-white">MaileHereKo</h1>
             <p className="text-secondary font-size-14">
-              List of movies and Tv Shows, I
-              <span className="span-color"> Sanaul Ansari</span> have watched
-              till date Explore what i have watched and also feel free to make a
-              suggestion
+              List of movies and Tv Shows, I have watched till date Explore what
+              i have watched and also feel free to make a suggestion.
             </p>
           </div>
           <div className="position-relative">
