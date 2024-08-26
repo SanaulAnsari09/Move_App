@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 import HeroSection from "../component/HeroSection";
 import Movies from "../component/Movies";
 
-// context for make search input value global
+// created context for making search input value available globally in this project. 
 const Context = createContext("");
 
 const Home = () => {
