@@ -150,7 +150,23 @@
   border-radius: 4px;
   animation: shimmer 1.5s infinite;
 }
-
+.single-skeleton-image{
+  height: 400px;
+  width: 100%;
+  background: #f6f7f8;
+  background-image: linear-gradient(90deg, #1c2234 25%, #27305a 50%, #191b32 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+.single-skeleton-text{
+  width: 100%;
+  background: #f6f7f8;
+  background-image: linear-gradient(90deg, #1c2234 25%, #27305a 50%, #191b32 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
 /* Shimmer animation */
 @keyframes shimmer {
   0% {
